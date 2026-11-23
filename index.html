@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pita Horn</title>
+<meta name="description" content="Página en desarrollo.">
+<meta name="theme-color" content="#C37A94">
+<meta property="og:title" content="Pita Horn">
+<meta property="og:description" content="Página en desarrollo.">
+<meta property="og:image" content="https://pitahorn.com/og.jpg">
+<link rel="preload" href="nautapita.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Nauta Pita";src:url(nautapita.woff2) format("woff2");font-display:swap}
+html,body{margin:0;height:100%}
+body{background:#C37A94;color:#100F42;font-family:"Nauta Pita",cursive;display:grid;place-items:center;overflow:hidden}
+.stage{position:relative;width:min(100vw,100dvh*5512/3508);aspect-ratio:5512/3508;container-type:inline-size}
+.stage img{position:absolute;inset:0;width:100%;height:100%}
+h1{position:absolute;left:28%;top:10%;width:47%;height:19%;margin:0;display:grid;place-items:center;
+ font-weight:400;font-size:5cqw;line-height:1;color:#F7D6E2;text-align:center;white-space:nowrap}
+@media (orientation:portrait){.stage{width:165vw;transform:translateX(-12%)}}
+.name{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));
+ margin:0;font-size:clamp(22px,3vw,40px);line-height:1}
+@media (prefers-reduced-motion:no-preference){h1{animation:in 1.2s .2s ease-out both}@keyframes in{from{opacity:0;transform:translateY(.15em)}}}
+</style>
+</head>
+<body>
+<div class="stage">
+ <img src="landing.webp" srcset="landing-1200.webp 1200w, landing.webp 2400w" sizes="100vw" alt="Un pequeño dragón azul pinta la pared con una brocha.">
+ <h1>página en desarrollo</h1>
+</div>
+<p class="name">Pita Horn</p>
+</body>
+</html>
